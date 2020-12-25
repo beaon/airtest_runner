@@ -13,6 +13,7 @@ from functools import wraps
 
 CFG_FILE = 'config.ini'
 
+
 def GetCfgData(sKey):
 	config = configparser.ConfigParser()
 	config.read(CFG_FILE)
@@ -21,6 +22,7 @@ def GetCfgData(sKey):
 		return sValue
 	else:
 		return ''
+
 
 def SetCfgData(sKey,sValue):
 	config = configparser.ConfigParser()

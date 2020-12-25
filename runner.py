@@ -23,6 +23,7 @@ from constant import LOG_ROOT
 
 class MyAirtestCase(unittest.TestCase):
 
+
 	def __init__(self, sDevice, oQueue=None):
 		super(MyAirtestCase, self).__init__()
 		self.sDevice = sDevice
@@ -112,6 +113,7 @@ class MyAirtestCase(unittest.TestCase):
 def Init():
 	if not os.path.exists(LOG_ROOT):
 		os.mkdir(LOG_ROOT)
+
 
 
 def Finish(sLogDir):
